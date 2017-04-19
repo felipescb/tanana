@@ -144,3 +144,5 @@ ipcMain.on('open-main-window', function (ev, arg) {
 ipcMain.on('open-lib', function (ev, arg) {
   openLibWindow(arg)
 })
+
+

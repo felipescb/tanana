@@ -6,12 +6,35 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+
+    <a href="#" class="tilter tilter--2">
+      <figure class="tilter__figure">
+        <div class="tilter__deco tilter__deco--overlay"></div>
+        <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+          <path d="M20.5,20.5h260v375h-260V20.5z" />
+        </svg>
+      </figure>
+    </a>
+
+
+
     <section class="presentation">
       <h1>Tananã</h1>
-      <p><em>Tananã</em> é um software educativo para aprender a ler partituras. Como está numa fase inicial de desenvolvimento, só lê partituras simples com clave de sol, notas e silêncios. Ligaduras e triplets, por exemplo, não são suportadas ainda.</p>
-      <p>O formato de arquivo que <em>Tananã</em> lê é o <a href="https://www.musicxml.com">MusicXML</a>, um padrão usado mundialmente para partituras musicais. <a href="http://www.musicxml.com/software/">Aqui</a>, por exemplo, podem ser encontrados programas que sabem ler/escrever o formato <em>MusicXML</em>.</p>
+      <!-- <p><em>Tananã</em> é um software educativo para aprender a ler partituras. Como está numa fase inicial de desenvolvimento, só lê partituras simples com clave de sol, notas e silêncios. Ligaduras e triplets, por exemplo, não são suportadas ainda.</p>
+      <p>O formato de arquivo que <em>Tananã</em> lê é o <a href="https://www.musicxml.com">MusicXML</a>, um padrão usado mundialmente para partituras musicais. <a href="http://www.musicxml.com/software/">Aqui</a>, por exemplo, podem ser encontrados programas que sabem ler/escrever o formato <em>MusicXML</em>.</p> -->
     </section>
-    <div class="initial-options">
+    
+
+  
+    <nav>
+
+     <div><button id="button-library" title="Selecionar">Selecionar Biblioteca</button></div> 
+     <div><button id="button-howto" title="Como Funciona">Como Funciona</button></div> 
+     <div><button id="button-about" title="Sobre o Tananã">Sobre o Tananã</button></div> 
+    </nav>  
+
+
+    <!-- <div class="initial-options">
       <div class="first-example">
         <button id="open-example" type="button">Me mostre um exemplo</button>
         <p>Se você está em dúvida, abra o exemplo inicial para ver como funciona</p>
@@ -21,7 +44,7 @@
         <p>Ou escolha uma pasta para servir de biblioteca:</p>
         <p><em>Tananã</em> vai ler esta pasta, suas subpastas e arquivos em busca de músicas em xml ;)</p>
       </div>
-    </div>
+    </div> -->
 
     <ul id="library-view"></ul>
 
@@ -29,15 +52,8 @@
       <p>Este projeto é <a href="http://github.com/graciano/tanana">open source</a> e é mantido por <strong>Matheus Graciano</strong></p>
       <p><a href="http://graciano.tk">graciano.tk</a></p>
     </footer>
-
-<!--     <h2>Electron stuff:</h2>
-    <p>
-      We are using Node.js <script>document.write(process.versions.node)</script>,
-      Chromium <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
-    </p> -->
   </body>
-
+  
   <script>
     require('./renderer.js')
   </script>
